@@ -9,4 +9,4 @@ CMD ["npm","run","build"]
 
 FROM nginx
 EXPOSE 80
-COPY --from=build /usr/app/frontend/build /usr/share/nginx/html
+COPY --from=0 /usr/app/frontend/build /usr/share/nginx/html
