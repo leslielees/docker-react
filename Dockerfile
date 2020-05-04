@@ -1,11 +1,9 @@
-# Multi stage
-
-FROM node:alpine as build
+FROM node:alpine
 WORKDIR /usr/app/frontend
 COPY package.json .
 RUN npm install
 COPY . .
-CMD ["npm","run","build"]
+RUN npm run build
 
 FROM nginx
 EXPOSE 80
