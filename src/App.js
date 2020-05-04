@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React / CI / CD / Docker / Kubernetes
+          Learn React / CI / CD / Docker / Kubernetes From Feature
         </a>
       </header>
     </div>
